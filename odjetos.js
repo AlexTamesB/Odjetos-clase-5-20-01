@@ -30,8 +30,8 @@ document.getElementById("IDTarjeta1").innerHTML = `
  <div class="card">
         <img class="card-img-top" src="holder.js/100x180/" alt="">
         <div class="card-body">
-            <h4 class="card-title">Title</h4>
-            <p class="card-text">Text</p>
+            <h4 class="card-title">${Personaje1.nombre}</h4>
+            <p class="card-text"${Personaje1.personlidad}</p>
         </div>
     </div>
 
