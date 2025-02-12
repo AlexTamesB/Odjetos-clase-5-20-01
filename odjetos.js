@@ -9,7 +9,7 @@ let Personaje1 = {
     edad: "35",
     raza: "saya",
     personlidad: "alegre",
-    imagen: "https://static.wikia.nocookie.net/dragonball/images/c/c0/Son_Goku_en_Super_Hero.png/revision/latest?cb=20220302091733&path-prefix=es"
+    imagen: "https://th.bing.com/th/id/R.99a41955f0f7b9cf6b770ca7acd68530?rik=9%2fz9ZsLTph%2fj%2fA&riu=http%3a%2f%2fwww.rincondelvago.com%2frevista%2fimage%2f2%2f4%2f124_5metodproyectos.jpg&ehk=rgsFuASlQyq5waOzKwWA2IhmOc%2bb3R3dmhwW5M3%2fYAI%3d&risl=&pid=ImgRaw&r=0"
 
 }
 
@@ -28,10 +28,10 @@ console.log(mascota1)
 document.getElementById("IDTarjeta1").innerHTML = `
 
  <div class="card">
-        <img class="card-img-top" src="holder.js/100x180/" alt="">
+        <img class="card-img-top" src="${Personaje1.imagen}" alt="">
         <div class="card-body">
             <h4 class="card-title">${Personaje1.nombre}</h4>
-            <p class="card-text"${Personaje1.personlidad}</p>
+            <p class="card-text">${Personaje1.personlidad}</p>
         </div>
     </div>
 
@@ -82,4 +82,30 @@ document.getElementById("IDNarbar").innerHTML =`
     </form>
   </div>
 </nav>
+`;
+
+
+let entrevista = {
+
+nombre : "beto",
+edad : "34" ,
+disponibilidad : "inmediata",
+estadoEmocional: "entusiasmado"
+
+
+} 
+
+
+document.getElementById("IDMicompa").innerHTML =`
+
+<div class="jumbotron">
+        <h1 class="display-3">${entrevista.disponibilidad}</h1>
+        <p class="lead">${entrevista.nombre}</p>
+        <hr class="my-2">
+        <p>${entrevista.edad}</p>
+        <p class="lead">
+          <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">${entrevista.estadoEmocional}</a>
+        </p>
+      </div>
+
 `;
